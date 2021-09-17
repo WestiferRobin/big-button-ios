@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6835B26C26F4A31900661FAC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6835B26B26F4A31900661FAC /* README.md */; };
+		68DF21E126F4918300B4F3A0 /* BigButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF21E026F4918300B4F3A0 /* BigButtonApp.swift */; };
+		68DF21E326F4918300B4F3A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF21E226F4918300B4F3A0 /* ContentView.swift */; };
+		68DF21E526F4918800B4F3A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DF21E426F4918800B4F3A0 /* Assets.xcassets */; };
+		68DF21E826F4918800B4F3A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DF21E726F4918800B4F3A0 /* Preview Assets.xcassets */; };
+		68DF21ED26F4918800B4F3A0 /* BigButton WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 68DF21EC26F4918800B4F3A0 /* BigButton WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		68DF21F226F4918900B4F3A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DF21F126F4918900B4F3A0 /* Assets.xcassets */; };
+		68DF21F926F4918900B4F3A0 /* BigButton WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 68DF21F826F4918900B4F3A0 /* BigButton WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		68DF21FE26F4918900B4F3A0 /* BigButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF21FD26F4918900B4F3A0 /* BigButtonApp.swift */; };
+		68DF220026F4918900B4F3A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF21FF26F4918900B4F3A0 /* ContentView.swift */; };
+		68DF220226F4918900B4F3A0 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF220126F4918900B4F3A0 /* NotificationController.swift */; };
+		68DF220426F4918900B4F3A0 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF220326F4918900B4F3A0 /* NotificationView.swift */; };
+		68DF220626F4918900B4F3A0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF220526F4918900B4F3A0 /* ComplicationController.swift */; };
+		68DF220826F4918A00B4F3A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DF220726F4918A00B4F3A0 /* Assets.xcassets */; };
+		68DF220B26F4918A00B4F3A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DF220A26F4918A00B4F3A0 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68DF21EE26F4918800B4F3A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68DF21D526F4918200B4F3A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68DF21EB26F4918800B4F3A0;
+			remoteInfo = "BigButton WatchKit App";
+		};
+		68DF21FA26F4918900B4F3A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68DF21D526F4918200B4F3A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68DF21F726F4918900B4F3A0;
+			remoteInfo = "BigButton WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		68DF221326F4918A00B4F3A0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				68DF21F926F4918900B4F3A0 /* BigButton WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68DF221726F4918A00B4F3A0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				68DF21ED26F4918800B4F3A0 /* BigButton WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6835B26B26F4A31900661FAC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		68DF21DD26F4918300B4F3A0 /* BigButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68DF21E026F4918300B4F3A0 /* BigButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButtonApp.swift; sourceTree = "<group>"; };
+		68DF21E226F4918300B4F3A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		68DF21E426F4918800B4F3A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68DF21E726F4918800B4F3A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		68DF21E926F4918800B4F3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68DF21EC26F4918800B4F3A0 /* BigButton WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BigButton WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68DF21F126F4918900B4F3A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68DF21F326F4918900B4F3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68DF21F826F4918900B4F3A0 /* BigButton WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BigButton WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68DF21FD26F4918900B4F3A0 /* BigButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButtonApp.swift; sourceTree = "<group>"; };
+		68DF21FF26F4918900B4F3A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		68DF220126F4918900B4F3A0 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		68DF220326F4918900B4F3A0 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		68DF220526F4918900B4F3A0 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		68DF220726F4918A00B4F3A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68DF220A26F4918A00B4F3A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		68DF220C26F4918A00B4F3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68DF220D26F4918A00B4F3A0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68DF21DA26F4918300B4F3A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68DF21F526F4918900B4F3A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68DF21D426F4918200B4F3A0 = {
+			isa = PBXGroup;
+			children = (
+				6835B26B26F4A31900661FAC /* README.md */,
+				68DF21DF26F4918300B4F3A0 /* BigButton */,
+				68DF21F026F4918800B4F3A0 /* BigButton WatchKit App */,
+				68DF21FC26F4918900B4F3A0 /* BigButton WatchKit Extension */,
+				68DF21DE26F4918300B4F3A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68DF21DE26F4918300B4F3A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68DF21DD26F4918300B4F3A0 /* BigButton.app */,
+				68DF21EC26F4918800B4F3A0 /* BigButton WatchKit App.app */,
+				68DF21F826F4918900B4F3A0 /* BigButton WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68DF21DF26F4918300B4F3A0 /* BigButton */ = {
+			isa = PBXGroup;
+			children = (
+				68DF21E026F4918300B4F3A0 /* BigButtonApp.swift */,
+				68DF21E226F4918300B4F3A0 /* ContentView.swift */,
+				68DF21E426F4918800B4F3A0 /* Assets.xcassets */,
+				68DF21E926F4918800B4F3A0 /* Info.plist */,
+				68DF21E626F4918800B4F3A0 /* Preview Content */,
+			);
+			path = BigButton;
+			sourceTree = "<group>";
+		};
+		68DF21E626F4918800B4F3A0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				68DF21E726F4918800B4F3A0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		68DF21F026F4918800B4F3A0 /* BigButton WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				68DF21F126F4918900B4F3A0 /* Assets.xcassets */,
+				68DF21F326F4918900B4F3A0 /* Info.plist */,
+			);
+			path = "BigButton WatchKit App";
+			sourceTree = "<group>";
+		};
+		68DF21FC26F4918900B4F3A0 /* BigButton WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				68DF21FD26F4918900B4F3A0 /* BigButtonApp.swift */,
+				68DF21FF26F4918900B4F3A0 /* ContentView.swift */,
+				68DF220126F4918900B4F3A0 /* NotificationController.swift */,
+				68DF220326F4918900B4F3A0 /* NotificationView.swift */,
+				68DF220526F4918900B4F3A0 /* ComplicationController.swift */,
+				68DF220726F4918A00B4F3A0 /* Assets.xcassets */,
+				68DF220C26F4918A00B4F3A0 /* Info.plist */,
+				68DF220D26F4918A00B4F3A0 /* PushNotificationPayload.apns */,
+				68DF220926F4918A00B4F3A0 /* Preview Content */,
+			);
+			path = "BigButton WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		68DF220926F4918A00B4F3A0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				68DF220A26F4918A00B4F3A0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68DF21DC26F4918300B4F3A0 /* BigButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68DF221826F4918A00B4F3A0 /* Build configuration list for PBXNativeTarget "BigButton" */;
+			buildPhases = (
+				68DF21D926F4918300B4F3A0 /* Sources */,
+				68DF21DA26F4918300B4F3A0 /* Frameworks */,
+				68DF21DB26F4918300B4F3A0 /* Resources */,
+				68DF221726F4918A00B4F3A0 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68DF21EF26F4918800B4F3A0 /* PBXTargetDependency */,
+			);
+			name = BigButton;
+			productName = BigButton;
+			productReference = 68DF21DD26F4918300B4F3A0 /* BigButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68DF21EB26F4918800B4F3A0 /* BigButton WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68DF221426F4918A00B4F3A0 /* Build configuration list for PBXNativeTarget "BigButton WatchKit App" */;
+			buildPhases = (
+				68DF21EA26F4918800B4F3A0 /* Resources */,
+				68DF221326F4918A00B4F3A0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68DF21FB26F4918900B4F3A0 /* PBXTargetDependency */,
+			);
+			name = "BigButton WatchKit App";
+			productName = "BigButton WatchKit App";
+			productReference = 68DF21EC26F4918800B4F3A0 /* BigButton WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		68DF21F726F4918900B4F3A0 /* BigButton WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68DF221026F4918A00B4F3A0 /* Build configuration list for PBXNativeTarget "BigButton WatchKit Extension" */;
+			buildPhases = (
+				68DF21F426F4918900B4F3A0 /* Sources */,
+				68DF21F526F4918900B4F3A0 /* Frameworks */,
+				68DF21F626F4918900B4F3A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BigButton WatchKit Extension";
+			productName = "BigButton WatchKit Extension";
+			productReference = 68DF21F826F4918900B4F3A0 /* BigButton WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68DF21D526F4918200B4F3A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					68DF21DC26F4918300B4F3A0 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					68DF21EB26F4918800B4F3A0 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					68DF21F726F4918900B4F3A0 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 68DF21D826F4918200B4F3A0 /* Build configuration list for PBXProject "BigButton" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68DF21D426F4918200B4F3A0;
+			productRefGroup = 68DF21DE26F4918300B4F3A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68DF21DC26F4918300B4F3A0 /* BigButton */,
+				68DF21EB26F4918800B4F3A0 /* BigButton WatchKit App */,
+				68DF21F726F4918900B4F3A0 /* BigButton WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68DF21DB26F4918300B4F3A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6835B26C26F4A31900661FAC /* README.md in Resources */,
+				68DF21E826F4918800B4F3A0 /* Preview Assets.xcassets in Resources */,
+				68DF21E526F4918800B4F3A0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68DF21EA26F4918800B4F3A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DF21F226F4918900B4F3A0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68DF21F626F4918900B4F3A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DF220B26F4918A00B4F3A0 /* Preview Assets.xcassets in Resources */,
+				68DF220826F4918A00B4F3A0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68DF21D926F4918300B4F3A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DF21E326F4918300B4F3A0 /* ContentView.swift in Sources */,
+				68DF21E126F4918300B4F3A0 /* BigButtonApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68DF21F426F4918900B4F3A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DF220226F4918900B4F3A0 /* NotificationController.swift in Sources */,
+				68DF220026F4918900B4F3A0 /* ContentView.swift in Sources */,
+				68DF220626F4918900B4F3A0 /* ComplicationController.swift in Sources */,
+				68DF21FE26F4918900B4F3A0 /* BigButtonApp.swift in Sources */,
+				68DF220426F4918900B4F3A0 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68DF21EF26F4918800B4F3A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68DF21EB26F4918800B4F3A0 /* BigButton WatchKit App */;
+			targetProxy = 68DF21EE26F4918800B4F3A0 /* PBXContainerItemProxy */;
+		};
+		68DF21FB26F4918900B4F3A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68DF21F726F4918900B4F3A0 /* BigButton WatchKit Extension */;
+			targetProxy = 68DF21FA26F4918900B4F3A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		68DF220E26F4918A00B4F3A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68DF220F26F4918A00B4F3A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		68DF221126F4918A00B4F3A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BigButton WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = UGH3DX4KH2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BigButton WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WestiferRobin.BigButton.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		68DF221226F4918A00B4F3A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BigButton WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = UGH3DX4KH2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BigButton WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WestiferRobin.BigButton.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		68DF221526F4918A00B4F3A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UGH3DX4KH2;
+				IBSC_MODULE = BigButton_WatchKit_Extension;
+				INFOPLIST_FILE = "BigButton WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = WestiferRobin.BigButton.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		68DF221626F4918A00B4F3A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UGH3DX4KH2;
+				IBSC_MODULE = BigButton_WatchKit_Extension;
+				INFOPLIST_FILE = "BigButton WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = WestiferRobin.BigButton.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		68DF221926F4918A00B4F3A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BigButton/Preview Content\"";
+				DEVELOPMENT_TEAM = UGH3DX4KH2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BigButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WestiferRobin.BigButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68DF221A26F4918A00B4F3A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BigButton/Preview Content\"";
+				DEVELOPMENT_TEAM = UGH3DX4KH2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BigButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WestiferRobin.BigButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68DF21D826F4918200B4F3A0 /* Build configuration list for PBXProject "BigButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68DF220E26F4918A00B4F3A0 /* Debug */,
+				68DF220F26F4918A00B4F3A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68DF221026F4918A00B4F3A0 /* Build configuration list for PBXNativeTarget "BigButton WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68DF221126F4918A00B4F3A0 /* Debug */,
+				68DF221226F4918A00B4F3A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68DF221426F4918A00B4F3A0 /* Build configuration list for PBXNativeTarget "BigButton WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68DF221526F4918A00B4F3A0 /* Debug */,
+				68DF221626F4918A00B4F3A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68DF221826F4918A00B4F3A0 /* Build configuration list for PBXNativeTarget "BigButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68DF221926F4918A00B4F3A0 /* Debug */,
+				68DF221A26F4918A00B4F3A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68DF21D526F4918200B4F3A0 /* Project object */;
+}
