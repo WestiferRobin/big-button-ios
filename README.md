@@ -3,6 +3,8 @@
 ## TODOs
 - Apple Watch
     - Finish the Horizontal View
+        - Keeping track of color, name, and sound
+    - Able to play sound when pressed
     - Figure out using the crown on moving the view
     - Figure out how to link with iPhone
 - iPhone

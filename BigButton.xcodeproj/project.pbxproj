@@ -22,6 +22,7 @@
 		68DF220626F4918900B4F3A0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF220526F4918900B4F3A0 /* ComplicationController.swift */; };
 		68DF220826F4918A00B4F3A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DF220726F4918A00B4F3A0 /* Assets.xcassets */; };
 		68DF220B26F4918A00B4F3A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DF220A26F4918A00B4F3A0 /* Preview Assets.xcassets */; };
+		68E2672026FB10BC00D674D3 /* BigButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E2671F26FB10BB00D674D3 /* BigButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		68DF220A26F4918A00B4F3A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		68DF220C26F4918A00B4F3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68DF220D26F4918A00B4F3A0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		68E2671F26FB10BB00D674D3 /* BigButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		68DF21FC26F4918900B4F3A0 /* BigButton WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				68E2671F26FB10BB00D674D3 /* BigButton.swift */,
 				68DF21FD26F4918900B4F3A0 /* BigButtonApp.swift */,
 				68DF21FF26F4918900B4F3A0 /* ContentView.swift */,
 				68DF220126F4918900B4F3A0 /* NotificationController.swift */,
@@ -326,6 +329,7 @@
 				68DF220626F4918900B4F3A0 /* ComplicationController.swift in Sources */,
 				68DF21FE26F4918900B4F3A0 /* BigButtonApp.swift in Sources */,
 				68DF220426F4918900B4F3A0 /* NotificationView.swift in Sources */,
+				68E2672026FB10BC00D674D3 /* BigButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

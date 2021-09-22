@@ -7,38 +7,41 @@
 
 import SwiftUI
 
-// NOTE: move the button once the horizontal view is ready
-struct BigButton: View {
-    var body: some View
-    {
-        Button(action: {
-                print("Pressed!")
-            }){
-                Text("Press me")
-                .frame(width: 150, height: 150)
-                .foregroundColor(Color.white)
-                .background(Color.red)
-                .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.white, lineWidth: 6))
-            }.buttonStyle(PlainButtonStyle())
-    }
+struct SoundObject {
+    // Add attributes for button attributes
 }
 
+// color, name, and sound
+class ButtonAttribute {
+    let buttonColor:Color
+    let name:String
+    
+    init()
+    {
+        
+    }
+    //let sound:SoundObject = SoundObject()
+}
 
 struct ContentView: View {
+    
+    // Need to connect with App side asap
+    @State private var buttonList : [ButtonAttribute] = [
+        ButtonAttribute(buttonColor: Color.blue, name: "fart"),
+        ButtonAttribute(buttonColor: Color.red, name: "OGERS HAVE LAYERS!?!?"),
+        ButtonAttribute(buttonColor: Color.green, name: "Star Wars Music")
+    ]
+    @State private var debugCounter:Int = 1;
+    
     var body: some View {
-        BigButton()
-//        ScrollView {
-//                    HStack {
-//                        BigButton()
-//                        BigButton()
-//                        BigButton()
-//                        BigButton()
-//                        BigButton()
-//                    }
-//                    .padding(16)
-//                }
-
+        
+    TabView {
+        ForEach(buttonList) { attribute in
+            BigButton(buttonAttribute:attribute)
+                    }
+    }
+    .font(.headline)
+        
     }
     
 }
