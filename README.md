@@ -2,9 +2,10 @@
 
 ## TODOs
 - Apple Watch
-    - Able to play sound when pressed
-    - Figure out using the crown on moving the view
     - Figure out how to link with iPhone
+        - Look at this link https://stackoverflow.com/questions/59804121/send-message-to-apple-watch-using-wcsession-in-swiftui
+    - Able to play sound when pressed
+    - Clean File structure
 - iPhone
     - HomeView NavigationList for buttons
         - slide and delete

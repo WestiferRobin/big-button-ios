@@ -7,43 +7,23 @@
 
 import SwiftUI
 
-struct SoundObject {
-    // Add attributes for button attributes
-}
-
-// color, name, and sound
-class ButtonAttribute {
-    let buttonColor:Color
-    let name:String
-    
-    init()
-    {
-        
-    }
-    //let sound:SoundObject = SoundObject()
-}
-
 struct ContentView: View {
     
     // Need to connect with App side asap
-    @State private var buttonList : [ButtonAttribute] = [
-        ButtonAttribute(buttonColor: Color.blue, name: "fart"),
-        ButtonAttribute(buttonColor: Color.red, name: "OGERS HAVE LAYERS!?!?"),
-        ButtonAttribute(buttonColor: Color.green, name: "Star Wars Music")
+    private var attributeList:[ButtonAttribute] = [
+        ButtonAttribute(title:"FART", color:Color.red),
+        ButtonAttribute(title:"OGRE!", color:Color.green),
+        ButtonAttribute(title:"Darth Vader", color:Color.blue)
     ]
-    @State private var debugCounter:Int = 1;
     
     var body: some View {
-        
-    TabView {
-        ForEach(buttonList) { attribute in
-            BigButton(buttonAttribute:attribute)
-                    }
+        TabView {
+            ForEach(attributeList, id: \.self) { attribute in
+                BigButton(buttonAttribute:attribute)
+            }
+        }
+        .font(.headline)
     }
-    .font(.headline)
-        
-    }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

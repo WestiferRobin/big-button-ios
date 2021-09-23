@@ -7,20 +7,25 @@
 
 import SwiftUI
 
+struct ButtonAttribute : Hashable
+{
+    public var title:String
+    public var color:Color
+}
+
 struct BigButton : View
 {
-    @State public var buttonAttribute:ButtonAttribute
-    // colorFlag:attribute.buttonColor, message: attribute.name
+    @State var buttonAttribute:ButtonAttribute
     
     var body: some View
     {
         Button(action: {
-                print("Pressed!")
+                print("Pressed \(buttonAttribute)!")
             }){
-                Text(self.buttonAttribute.name)
+                Text(self.buttonAttribute.title)
                 .frame(width: 150, height: 150)
                 .foregroundColor(Color.white)
-                .background(self.buttonAttribute.buttonColor)
+                .background(self.buttonAttribute.color)
                 .clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 6))
             }.buttonStyle(PlainButtonStyle())
