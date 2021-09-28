@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68222B6B2702A47A007D49AD /* ViewModelWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68222B6A2702A47A007D49AD /* ViewModelWatch.swift */; };
+		68222B6D2702A5E0007D49AD /* ViewModelPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68222B6C2702A5E0007D49AD /* ViewModelPhone.swift */; };
 		6835B26C26F4A31900661FAC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6835B26B26F4A31900661FAC /* README.md */; };
+		684F691D2702D4CF004FEF3D /* WatchSoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684F691C2702D4CE004FEF3D /* WatchSoundManager.swift */; };
 		68BE621126FC5DE900843497 /* ConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BE620D26FC5D4C00843497 /* ConnectivityProvider.swift */; };
 		68BE621226FC5DF400843497 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BE620F26FC5D9E00843497 /* ViewModel.swift */; };
 		68DF21E126F4918300B4F3A0 /* BigButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF21E026F4918300B4F3A0 /* BigButtonApp.swift */; };
-		68DF21E326F4918300B4F3A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF21E226F4918300B4F3A0 /* ContentView.swift */; };
+		68DF21E326F4918300B4F3A0 /* PhoneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF21E226F4918300B4F3A0 /* PhoneContentView.swift */; };
 		68DF21E526F4918800B4F3A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DF21E426F4918800B4F3A0 /* Assets.xcassets */; };
 		68DF21E826F4918800B4F3A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DF21E726F4918800B4F3A0 /* Preview Assets.xcassets */; };
 		68DF21ED26F4918800B4F3A0 /* BigButton WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 68DF21EC26F4918800B4F3A0 /* BigButton WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -70,12 +73,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		68222B6A2702A47A007D49AD /* ViewModelWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelWatch.swift; sourceTree = "<group>"; };
+		68222B6C2702A5E0007D49AD /* ViewModelPhone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelPhone.swift; sourceTree = "<group>"; };
+		68222B6E2702AEF1007D49AD /* BigButton WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BigButton WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
 		6835B26B26F4A31900661FAC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		684F691C2702D4CE004FEF3D /* WatchSoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSoundManager.swift; sourceTree = "<group>"; };
 		68BE620D26FC5D4C00843497 /* ConnectivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityProvider.swift; sourceTree = "<group>"; };
 		68BE620F26FC5D9E00843497 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		68DF21DD26F4918300B4F3A0 /* BigButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68DF21E026F4918300B4F3A0 /* BigButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButtonApp.swift; sourceTree = "<group>"; };
-		68DF21E226F4918300B4F3A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		68DF21E226F4918300B4F3A0 /* PhoneContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneContentView.swift; sourceTree = "<group>"; };
 		68DF21E426F4918800B4F3A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68DF21E726F4918800B4F3A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		68DF21E926F4918800B4F3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,6 +128,7 @@
 				68DF21F026F4918800B4F3A0 /* BigButton WatchKit App */,
 				68DF21FC26F4918900B4F3A0 /* BigButton WatchKit Extension */,
 				68DF21DE26F4918300B4F3A0 /* Products */,
+				68222B6E2702AEF1007D49AD /* BigButton WatchKit App-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,9 +145,10 @@
 		68DF21DF26F4918300B4F3A0 /* BigButton */ = {
 			isa = PBXGroup;
 			children = (
+				68222B6C2702A5E0007D49AD /* ViewModelPhone.swift */,
 				68DF21E026F4918300B4F3A0 /* BigButtonApp.swift */,
 				68BE620D26FC5D4C00843497 /* ConnectivityProvider.swift */,
-				68DF21E226F4918300B4F3A0 /* ContentView.swift */,
+				68DF21E226F4918300B4F3A0 /* PhoneContentView.swift */,
 				68BE620F26FC5D9E00843497 /* ViewModel.swift */,
 				68DF21E426F4918800B4F3A0 /* Assets.xcassets */,
 				68DF21E926F4918800B4F3A0 /* Info.plist */,
@@ -168,6 +177,7 @@
 		68DF21FC26F4918900B4F3A0 /* BigButton WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				68222B6A2702A47A007D49AD /* ViewModelWatch.swift */,
 				68E2671F26FB10BB00D674D3 /* BigButton.swift */,
 				68DF21FD26F4918900B4F3A0 /* BigButtonApp.swift */,
 				68DF21FF26F4918900B4F3A0 /* ContentView.swift */,
@@ -178,6 +188,7 @@
 				68DF220C26F4918A00B4F3A0 /* Info.plist */,
 				68DF220D26F4918A00B4F3A0 /* PushNotificationPayload.apns */,
 				68DF220926F4918A00B4F3A0 /* Preview Content */,
+				684F691C2702D4CE004FEF3D /* WatchSoundManager.swift */,
 			);
 			path = "BigButton WatchKit Extension";
 			sourceTree = "<group>";
@@ -260,6 +271,7 @@
 					};
 					68DF21EB26F4918800B4F3A0 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1300;
 					};
 					68DF21F726F4918900B4F3A0 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -321,7 +333,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68DF21E326F4918300B4F3A0 /* ContentView.swift in Sources */,
+				68222B6D2702A5E0007D49AD /* ViewModelPhone.swift in Sources */,
+				68DF21E326F4918300B4F3A0 /* PhoneContentView.swift in Sources */,
 				68DF21E126F4918300B4F3A0 /* BigButtonApp.swift in Sources */,
 				68BE621226FC5DF400843497 /* ViewModel.swift in Sources */,
 				68BE621126FC5DE900843497 /* ConnectivityProvider.swift in Sources */,
@@ -335,7 +348,9 @@
 				68DF220226F4918900B4F3A0 /* NotificationController.swift in Sources */,
 				68DF220026F4918900B4F3A0 /* ContentView.swift in Sources */,
 				68DF220626F4918900B4F3A0 /* ComplicationController.swift in Sources */,
+				68222B6B2702A47A007D49AD /* ViewModelWatch.swift in Sources */,
 				68DF21FE26F4918900B4F3A0 /* BigButtonApp.swift in Sources */,
+				684F691D2702D4CF004FEF3D /* WatchSoundManager.swift in Sources */,
 				68DF220426F4918900B4F3A0 /* NotificationView.swift in Sources */,
 				68E2672026FB10BC00D674D3 /* BigButton.swift in Sources */,
 			);
@@ -523,14 +538,22 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UGH3DX4KH2;
 				IBSC_MODULE = BigButton_WatchKit_Extension;
 				INFOPLIST_FILE = "BigButton WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = WestiferRobin.BigButton.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BigButton WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 7.4;
@@ -543,14 +566,21 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UGH3DX4KH2;
 				IBSC_MODULE = BigButton_WatchKit_Extension;
 				INFOPLIST_FILE = "BigButton WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = WestiferRobin.BigButton.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BigButton WatchKit App-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;

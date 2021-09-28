@@ -7,22 +7,25 @@
 
 import SwiftUI
 
+// Watch - ContentView
 struct ContentView: View {
     
-    // Need to connect with App side asap
-    private var attributeList:[ButtonAttribute] = [
-        ButtonAttribute(title:"FART", color:Color.red),
-        ButtonAttribute(title:"OGRE!", color:Color.green),
-        ButtonAttribute(title:"Darth Vader", color:Color.blue)
-    ]
+    @ObservedObject var model = ViewModelWatch()
     
     var body: some View {
-        TabView {
-            ForEach(attributeList, id: \.self) { attribute in
-                BigButton(buttonAttribute:attribute)
-            }
+        if (self.model.buttonAttributes.count == 0)
+        {
+            Text("Waiting for Buttons!!")
         }
-        .font(.headline)
+        else
+        {
+            TabView {
+                ForEach(self.model.buttonAttributes, id: \.self) {
+                    attribute in BigButton(buttonAttribute:attribute)
+                }
+            }
+            .font(.headline)
+        }
     }
 }
 
