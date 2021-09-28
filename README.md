@@ -2,7 +2,9 @@
 
 ## TODOs
 - iPhone
-    - Try doing this with my actual phone and watch
+    - Try doing this with my actual phone and watch. Here are some proposed links.
+        - https://www.hackingwithswift.com/forums/swiftui/playing-mp3-files/8621
+        - https://stackoverflow.com/questions/50001356/serving-a-mp4-file-with-flask-and-playing-it-on-an-objective-c-app-causes-broke
     - HomeView NavigationList for buttons
         - slide and delete
         - click and able to view it
