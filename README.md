@@ -1,13 +1,6 @@
 # big-button-ios
 
 ## TODOs
-- Apple Watch
-    - Find debug 3rd party audio resources (Backend issues can't play my files)
-        - Vader, Homer, and SmashAnnouncer
-        - Get creative and get 2-3 more cases (see about replacing SmashAnnouncer)
-    - Fix bug of the button being pressed vs paused
-    - Polish Big Project vs Prototype vs Small Project Objectives for BigButton
-        - Look at automating README.md for every repo I create
 - iPhone
     - HomeView NavigationList for buttons
         - slide and delete
@@ -20,11 +13,9 @@
         - able to play the button when selected on the home view screen
         - should be able to delete and to go back
             - Able to play sound when pressed both phone and watch
-    - Audio!!!! Try doing this with my actual phone and watch. Here are some proposed links.
-        - Proposed links for solutions
-            - https://www.hackingwithswift.com/forums/swiftui/playing-mp3-files/8621
-            - https://stackoverflow.com/questions/50001356/serving-a-mp4-file-with-flask-and-playing-it-on-an-objective-c-app-causes-broke
+    - Audio!!!!
         - Create foundation of backend wrapper
+            - figure out how phone can get localhost
             - Should at least support basic GET, POST, PUT, and DELETE
             - Should only have the domain name
             - Classes are in charge for organizing data

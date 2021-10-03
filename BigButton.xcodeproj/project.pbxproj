@@ -11,6 +11,7 @@
 		68222B6D2702A5E0007D49AD /* ViewModelPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68222B6C2702A5E0007D49AD /* ViewModelPhone.swift */; };
 		6835B26C26F4A31900661FAC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6835B26B26F4A31900661FAC /* README.md */; };
 		684F691D2702D4CF004FEF3D /* WatchSoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684F691C2702D4CE004FEF3D /* WatchSoundManager.swift */; };
+		686FCF15270998820041CA08 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FCF14270998820041CA08 /* HomeView.swift */; };
 		68BE621126FC5DE900843497 /* ConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BE620D26FC5D4C00843497 /* ConnectivityProvider.swift */; };
 		68BE621226FC5DF400843497 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BE620F26FC5D9E00843497 /* ViewModel.swift */; };
 		68DF21E126F4918300B4F3A0 /* BigButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF21E026F4918300B4F3A0 /* BigButtonApp.swift */; };
@@ -78,6 +79,7 @@
 		68222B6E2702AEF1007D49AD /* BigButton WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BigButton WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
 		6835B26B26F4A31900661FAC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		684F691C2702D4CE004FEF3D /* WatchSoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSoundManager.swift; sourceTree = "<group>"; };
+		686FCF14270998820041CA08 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		68BE620D26FC5D4C00843497 /* ConnectivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityProvider.swift; sourceTree = "<group>"; };
 		68BE620F26FC5D9E00843497 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		68DF21DD26F4918300B4F3A0 /* BigButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		686FCF13270998500041CA08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				686FCF14270998820041CA08 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		68DF21D426F4918200B4F3A0 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +155,7 @@
 		68DF21DF26F4918300B4F3A0 /* BigButton */ = {
 			isa = PBXGroup;
 			children = (
+				686FCF13270998500041CA08 /* Views */,
 				68222B6C2702A5E0007D49AD /* ViewModelPhone.swift */,
 				68DF21E026F4918300B4F3A0 /* BigButtonApp.swift */,
 				68BE620D26FC5D4C00843497 /* ConnectivityProvider.swift */,
@@ -336,6 +347,7 @@
 				68222B6D2702A5E0007D49AD /* ViewModelPhone.swift in Sources */,
 				68DF21E326F4918300B4F3A0 /* PhoneContentView.swift in Sources */,
 				68DF21E126F4918300B4F3A0 /* BigButtonApp.swift in Sources */,
+				686FCF15270998820041CA08 /* HomeView.swift in Sources */,
 				68BE621226FC5DF400843497 /* ViewModel.swift in Sources */,
 				68BE621126FC5DE900843497 /* ConnectivityProvider.swift in Sources */,
 			);

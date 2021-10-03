@@ -14,13 +14,14 @@ struct PhoneContentView: View {
     // TODO: Key should be encrypted.... Maybe
     // TODO: Fix this stupid service in backend
     @State var debugValues:[String:[String]] = [
-        "0": ["WhooHoo!", "green", "http://127.0.0.1:5000/homer.mp3"],
-        "1": ["HERE IS WES!", "blue", "http://127.0.0.1:5000/announcer.mp3"],
-        "2": ["Vader!", "red", "http://127.0.0.1:5000/vader.mp3"],
+        "0": ["WhooHoo!", "green", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/Yodel_Sound_Effect.mp3"],
+        "1": ["HERE IS WES!", "blue", "http://127.0.0.1:5000/announcer.mp4"],
+        "2": ["Vader!", "red", "http://127.0.0.1:5000/vader.mp4"],
     ]
     
     var body: some View {
         VStack{
+            HomeView()
             Text("Reachable \(reachable)")
             
             Button("testButton", action: {
