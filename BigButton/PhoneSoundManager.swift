@@ -1,15 +1,16 @@
 //
-//  WatchSoundManager.swift
-//  BigButton WatchKit Extension
+//  PhoneSoundManager.swift
+//  BigButton
 //
-//  Created by Wesley Webb on 9/27/21.
+//  Created by Wesley Webb on 10/3/21.
 //
 
 import AVFoundation
 
-class WatchSoundManager : ObservableObject {
+class PhoneSoundManager : ObservableObject {
     var audioPlayer: AVAudioPlayer?
 
+    // NOTE: Check if we can get this data ahead of time
     func playSound(sound: String){
         let url = URL(string: sound)
         let data = try! Data(contentsOf: url!)

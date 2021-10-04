@@ -1,14 +1,15 @@
 //
-//  Red.swift
-//  BigButton WatchKit Extension
+//  BigButton.swift
+//  BigButton
 //
-//  Created by Wesley Webb on 9/22/21.
+//  Created by Wesley Webb on 10/3/21.
 //
 
 import SwiftUI
 
-struct ButtonAttribute : Hashable
+struct ButtonAttribute : Identifiable
 {
+    let id = UUID()
     public var title:String
     public var color:Color
     public var soundUrl:String
@@ -17,7 +18,7 @@ struct ButtonAttribute : Hashable
 struct BigButton : View
 {
     @State var buttonAttribute:ButtonAttribute
-    @StateObject private var soundManager = WatchSoundManager()
+    @StateObject private var soundManager = PhoneSoundManager()
     
     var body: some View
     {
@@ -26,7 +27,8 @@ struct BigButton : View
                 self.playSound()
             }){
                 Text(self.buttonAttribute.title)
-                .frame(width: 150, height: 150)
+                .frame(width: 400, height: 400)
+                .font(.largeTitle)
                 .foregroundColor(Color.white)
                 .background(self.buttonAttribute.color)
                 .clipShape(Circle())
@@ -40,3 +42,4 @@ struct BigButton : View
         soundManager.audioPlayer?.play()
     }
 }
+

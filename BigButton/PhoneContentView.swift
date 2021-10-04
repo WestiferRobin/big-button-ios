@@ -7,47 +7,18 @@
 
 import SwiftUI
 
-struct PhoneContentView: View {
-    var model = ViewModelPhone()
-    @State var reachable = "No"
-    
-    // TODO: Key should be encrypted.... Maybe
-    // TODO: Fix this stupid service in backend
-    @State var debugValues:[String:[String]] = [
-        "0": ["WhooHoo!", "green", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/Yodel_Sound_Effect.mp3"],
-        "1": ["HERE IS WES!", "blue", "http://127.0.0.1:5000/announcer.mp4"],
-        "2": ["Vader!", "red", "http://127.0.0.1:5000/vader.mp4"],
-    ]
+struct ContentView: View {
+    // UNSURE IF I NEED TO MOVE IT!
+//    var model = ViewModelPhone()
+//    var audioPlayer:PhoneSoundManager = PhoneSoundManager()
     
     var body: some View {
-        VStack{
-            HomeView()
-            Text("Reachable \(reachable)")
-            
-            Button("testButton", action: {
-                if self.model.session.isReachable{
-                    self.reachable = "Yes"
-                }
-                else{
-                    self.reachable = "No"
-                }
-               
-            })
-            
-            // THIS IS DEBUG CODE
-            Button(action: {
-                self.model.session.sendMessage(debugValues, replyHandler: nil) {
-                    (error) in print(error.localizedDescription)
-                }
-            }) {
-            Text("Send Message")
-            }
-        }
+        HomeView()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        PhoneContentView()
+        ContentView()
     }
 }

@@ -43,6 +43,9 @@ class ViewModelWatch : NSObject,  WCSessionDelegate, ObservableObject{
                     case "blue":
                         color = Color.blue
                         break
+                    case "yellow":
+                        color = Color.yellow
+                        break
                     default:
                         color = Color.white
                         break

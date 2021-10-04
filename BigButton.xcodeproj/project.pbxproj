@@ -14,6 +14,14 @@
 		686FCF15270998820041CA08 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FCF14270998820041CA08 /* HomeView.swift */; };
 		68BE621126FC5DE900843497 /* ConnectivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BE620D26FC5D4C00843497 /* ConnectivityProvider.swift */; };
 		68BE621226FC5DF400843497 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BE620F26FC5D9E00843497 /* ViewModel.swift */; };
+		68DB0CB1270A92A9005ED143 /* PhoneSoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB0CB0270A92A9005ED143 /* PhoneSoundManager.swift */; };
+		68DB0CB4270AA396005ED143 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB0CB3270AA396005ED143 /* OptionsView.swift */; };
+		68DB0CB6270AA3D1005ED143 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB0CB5270AA3D1005ED143 /* PlayView.swift */; };
+		68DB0CB8270AA3FD005ED143 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB0CB7270AA3FD005ED143 /* RecordView.swift */; };
+		68DB0CBA270AA42F005ED143 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB0CB9270AA42F005ED143 /* LoginView.swift */; };
+		68DB0CBC270AA4CF005ED143 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB0CBB270AA4CF005ED143 /* DebugView.swift */; };
+		68DB0CBF270AB220005ED143 /* BigButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB0CBE270AB220005ED143 /* BigButton.swift */; };
+		68DB0CC1270AC5CF005ED143 /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB0CC0270AC5CF005ED143 /* NavigationItem.swift */; };
 		68DF21E126F4918300B4F3A0 /* BigButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF21E026F4918300B4F3A0 /* BigButtonApp.swift */; };
 		68DF21E326F4918300B4F3A0 /* PhoneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF21E226F4918300B4F3A0 /* PhoneContentView.swift */; };
 		68DF21E526F4918800B4F3A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DF21E426F4918800B4F3A0 /* Assets.xcassets */; };
@@ -82,6 +90,14 @@
 		686FCF14270998820041CA08 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		68BE620D26FC5D4C00843497 /* ConnectivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityProvider.swift; sourceTree = "<group>"; };
 		68BE620F26FC5D9E00843497 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		68DB0CB0270A92A9005ED143 /* PhoneSoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSoundManager.swift; sourceTree = "<group>"; };
+		68DB0CB3270AA396005ED143 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+		68DB0CB5270AA3D1005ED143 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		68DB0CB7270AA3FD005ED143 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		68DB0CB9270AA42F005ED143 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		68DB0CBB270AA4CF005ED143 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
+		68DB0CBE270AB220005ED143 /* BigButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButton.swift; sourceTree = "<group>"; };
+		68DB0CC0270AC5CF005ED143 /* NavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItem.swift; sourceTree = "<group>"; };
 		68DF21DD26F4918300B4F3A0 /* BigButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68DF21E026F4918300B4F3A0 /* BigButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButtonApp.swift; sourceTree = "<group>"; };
 		68DF21E226F4918300B4F3A0 /* PhoneContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneContentView.swift; sourceTree = "<group>"; };
@@ -126,8 +142,22 @@
 			isa = PBXGroup;
 			children = (
 				686FCF14270998820041CA08 /* HomeView.swift */,
+				68DB0CB3270AA396005ED143 /* OptionsView.swift */,
+				68DB0CB5270AA3D1005ED143 /* PlayView.swift */,
+				68DB0CB7270AA3FD005ED143 /* RecordView.swift */,
+				68DB0CB9270AA42F005ED143 /* LoginView.swift */,
+				68DB0CBB270AA4CF005ED143 /* DebugView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		68DB0CBD270AB20F005ED143 /* Componets */ = {
+			isa = PBXGroup;
+			children = (
+				68DB0CBE270AB220005ED143 /* BigButton.swift */,
+				68DB0CC0270AC5CF005ED143 /* NavigationItem.swift */,
+			);
+			path = Componets;
 			sourceTree = "<group>";
 		};
 		68DF21D426F4918200B4F3A0 = {
@@ -155,6 +185,7 @@
 		68DF21DF26F4918300B4F3A0 /* BigButton */ = {
 			isa = PBXGroup;
 			children = (
+				68DB0CBD270AB20F005ED143 /* Componets */,
 				686FCF13270998500041CA08 /* Views */,
 				68222B6C2702A5E0007D49AD /* ViewModelPhone.swift */,
 				68DF21E026F4918300B4F3A0 /* BigButtonApp.swift */,
@@ -164,6 +195,7 @@
 				68DF21E426F4918800B4F3A0 /* Assets.xcassets */,
 				68DF21E926F4918800B4F3A0 /* Info.plist */,
 				68DF21E626F4918800B4F3A0 /* Preview Content */,
+				68DB0CB0270A92A9005ED143 /* PhoneSoundManager.swift */,
 			);
 			path = BigButton;
 			sourceTree = "<group>";
@@ -344,11 +376,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68DB0CBC270AA4CF005ED143 /* DebugView.swift in Sources */,
 				68222B6D2702A5E0007D49AD /* ViewModelPhone.swift in Sources */,
+				68DB0CB1270A92A9005ED143 /* PhoneSoundManager.swift in Sources */,
+				68DB0CBF270AB220005ED143 /* BigButton.swift in Sources */,
 				68DF21E326F4918300B4F3A0 /* PhoneContentView.swift in Sources */,
+				68DB0CB8270AA3FD005ED143 /* RecordView.swift in Sources */,
+				68DB0CB4270AA396005ED143 /* OptionsView.swift in Sources */,
 				68DF21E126F4918300B4F3A0 /* BigButtonApp.swift in Sources */,
 				686FCF15270998820041CA08 /* HomeView.swift in Sources */,
+				68DB0CB6270AA3D1005ED143 /* PlayView.swift in Sources */,
+				68DB0CBA270AA42F005ED143 /* LoginView.swift in Sources */,
 				68BE621226FC5DF400843497 /* ViewModel.swift in Sources */,
+				68DB0CC1270AC5CF005ED143 /* NavigationItem.swift in Sources */,
 				68BE621126FC5DE900843497 /* ConnectivityProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
