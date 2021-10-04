@@ -2,15 +2,16 @@
 
 ## TODOs
 - iPhone
-    - PlayView 
-        - able to play the button when selected on the home view screen
-        - should be able to delete and to go back
-            - Able to play sound when pressed both phone and watch
     - RecordView for a new button 
         - RecordView and flow (maybe)
             - naming the track
             - able to record, save, playback
             - define the colors for buttons
+    - PlayView 
+        - able to play the button when selected on the home view screen
+        - should be able to modify the button
+        - should be able to delete and to go back
+            - Able to play sound when pressed both phone and watch
     - OptionsView
         - This will be the foundation for options
     - Basic LoginView
