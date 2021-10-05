@@ -35,8 +35,7 @@
         - Might need an icon at the top of the HomeView?
         - Design it from scratch (minimal art) or hire artist from fiverr
 - Backend:
-    - Serving audio resource isn't working
-        - Waiting for iPhone attempt
+    - Temp backend is written on Mac. Use this as a starting foundation.
 - Prototype: 
     - Create sharing audio like tiktok and a basic 
     - Encrypted backend
