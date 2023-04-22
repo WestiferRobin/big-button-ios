@@ -1,4 +1,5 @@
 # big-button-ios
+Refactor to be React Native or continue development in swift
 
 ## TODOs
 - iPhone
